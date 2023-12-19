@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Réplique",
+      "excerpt": "Découvrez comment la célèbre citation de 'Kung Fu Panda' - 'Hier est derrière, demain est mystère, et aujourd'hui est un cadeau, c'est pour cela qu'on l'appelle le présent – peut illuminer votre vision de la vie. Quelle est son importance dans le film et le parcours de Po ?",
+      "link": "/fr/replique.html",
+      "picture": "/public/img/lieu_replique.webp",
+      "picture_desc": "lieu de la réplique"
+    },
+    {
+      "id": 2,
+      "title": "Kung Fu Panda",
+      "excerpt": "Kung fu panda, un film est une aventure animée incroyablement amusante qui nous emmène dans un monde rempli de combats épiques avec un héros inattendu.",
+      "link": "/fr/kung-fu-panda.html",
+      "picture": "/public/img/affiche.webp",
+      "picture_desc": "affiche du film"
+    },
+    {
+      "id": 3,
+      "title": "Pensée sur le temps",
+      "excerpt": "Pensée sur le temps, un livre écrit par André Comte-Sponville. Le livre nous plonge dans la philosophie du temps. Il est en lien avec la réplique du film sur la notion du temps et de l’importance de l’instant présent dans notre vie.",
+      "link": "/fr/pensee-sur-le-temps.html",
+      "picture": "/public/img/livre.webp",
+      "picture_desc": "couverture du livre"
+    },
+    {
+        "id": 4,
+        "title": "Kung Fu Fighting",
+        "excerpt": "La musique “Kung Fu Fighting” qui vient directement du film. Il correspond à la réplique car il insiste sur le fait de persévérer.",
+        "link": "/fr/kung-fu-fighting.html",
+        "picture": "/public/img/album.webp",
+        "picture_desc": "album de la musique"
+    },
+    {
+        "id": 5,
+        "title": "Mark Osborne et John Stevenson",
+        "excerpt": "Mark Osborne et John Stevenson sont les réalisateurs du film Kung Fu Panda. Ils ont effectué un travail incroyablement pour créer un film qui marque tous les âges. Comment ont-ils fait pour réaliser cet exploit ?",
+        "link": "/fr/realisateurs.html",
+        "picture": "/public/img/realisateur-card.webp",
+        "picture_desc": "Réalisateurs du film"
+    }
+  ]

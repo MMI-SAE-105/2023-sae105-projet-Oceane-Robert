@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueilt</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Accueil</title>
 </head>
 <body>
     <header>
@@ -38,6 +40,53 @@
         <div>
             <img src="/public/img/image_introduction.webp" alt="po dans l'introduction">
         </div>
+        <section class="section container"
+        x-data="{ 'cards' : async ()=> {
+          const resp = await fetch('/src/data/article.json');
+          return await resp.json();
+        }}">
+            <header class="section__header">
+                <h1 class="section__title">“Hier est derrière, demain est mystère, aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent”</h1>
+                <p class="section__intro">Plonger dans l’univers de “Kung Fu Panda” et découvrez une réplique du film qui peut changer votre façon de voir les choses. À travers des textes inspirants, des leçons de sagesse, et des analyses profondes où la persévérance en est la clé. Venez pour une aventure enrichissante où chaque jour est un cadeau et chaque moment une opportunité. Nous ne prenons pas assez le temps de vivre les choses, c'est le moment de le découvrir et de le faire.</p>
+            </header>
+            <template x-for="card in cards" :key="card.id">
+                <article class="section__card card">
+                  <div class="card__img">
+                    <img :src="card.picture" :alt="card.picture_desc">
+                  </div>
+                  <div class="card__caption"></div>
+                    <h3 class="card__title">
+                        <a class="card__title-link" :href="card.link" x-text="card.title"></a>
+                    </h3>
+                    <p class="card__excerpt" x-text="card.excerpt"></p>
+                    <a class="card__link morelink" :href="card.link">en savoir plus</a>
+                  </div>
+                </article>
+              </template>
+        </section>
     </main>
+    <footer class="footer">
+            <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
+            <nav class="footer__menu">
+                <ul class="list-unstyled">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Glossaire</a></li>
+                </ul>
+            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <div class="footer__contact">
+            <address class="footer__address">
+              <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
+            </address>
+        </div>
+        <div class="footer__social">
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+              <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+                <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
