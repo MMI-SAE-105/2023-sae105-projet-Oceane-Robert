@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <link rel="alternate" hreflang="fr" href="/fr/index.html">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -55,7 +55,7 @@
                   <div class="card__img">
                     <img :src="card.picture" :alt="card.picture_desc">
                   </div>
-                  <div class="card__caption"></div>
+                  <div class="card__caption">
                     <h3 class="card__title">
                         <a class="card__title-link" :href="card.link" x-text="card.title"></a>
                     </h3>
@@ -74,6 +74,7 @@
                 <li><a href="#">A propos</a></li>
                 <li><a href="#">Glossaire</a></li>
                 </ul>
+            </nav>
             <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
         <div class="footer__contact">
             <address class="footer__address">

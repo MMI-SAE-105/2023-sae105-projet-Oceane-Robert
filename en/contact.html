@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <link rel="alternate" hreflang="fr" href="/fr/contact.html">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="header__start">
+            <a href="/">
+                <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header__end" >
+            <a class="header__link" href="/en/index.html">
+                <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
+            </a>
+            <button class="header__menu-btn menu-btn">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu">
+                <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/replique.html">Réplique</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-panda.html">Kung Fu Panda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/pensee-sur-le-temps.html">Pensée sur le temps</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-fighting.html">Kung Fu Fighting</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/realisateurs.html">Mark Osborne et John Stevenson</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/propos.html"> A propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form class="formulaire container" action="/submit_contact" method="post">
+            <p>
+            <label class="formulaire__nom" for="prenom">First Name </label><br>
+            <input class="nom__text" type="text" id="prenom" name="prenom" value="Édouard"><br>
+            </p>
+            <p>
+            <label class="formulaire__nom" for="nom">Name </label><br>
+            <input class="nom__text" type="text" id="nom" name="nom" value="Dubois"><br>
+            </p>
+            <p>
+            <label class="formulaire__nom" for="email">Mail </label><br>
+            <input class="nom__text" type="email" id="email" name="email" value="exemple@mail.com"><br>
+            </p>
+            <p>
+            <label class="formulaire__nom" for="message">Message </label><br>
+            <textarea id="message" name="message">Write...</textarea><br>
+            </p>
+            <p>
+            <input class="formulaire__btn" type="submit" value="Send">
+            </p>
+        </form>  
+    </main>
+    <footer class="footer">
+        <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Glossaire</a></li>
+            </ul>
+        </nav>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+    <div class="footer__contact">
+        <address class="footer__address">
+          <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
+        </address>
+    </div>
+    <div class="footer__social">
+        <ul class="footer__list list-unstyled">
+          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
