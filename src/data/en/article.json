@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Replica",
+      "excerpt": "Find out how the famous quote from 'Kung Fu Panda' - 'Yesterday is behind, tomorrow is mystery, and today is a gift, that’s why it’s called the present - can illuminate your vision of life. How important is it in Po’s film and journey ?",
+      "link": "/en/replica.html",
+      "picture": "/public/img/lieu_replique.webp",
+      "picture_desc": "lieu de la réplique"
+    },
+    {
+      "id": 2,
+      "title": "Kung Fu Panda",
+      "excerpt": "Kung fu panda, a movie is an incredibly fun animated adventure that takes us into a world filled with epic battles with an unexpected hero.",
+      "link": "/en/kung-fu-panda.html",
+      "picture": "/public/img/affiche.webp",
+      "picture_desc": "affiche du film"
+    },
+    {
+      "id": 3,
+      "title": "Thinking about time",
+      "excerpt": "Thinking about time, a book written by André Comte-Sponville. The book plunges us into the philosophy of time. It is related to the film’s replica on the notion of time and the importance of the present moment in our lives.",
+      "link": "/en/thinking-about-time.html",
+      "picture": "/public/img/livre.webp",
+      "picture_desc": "couverture du livre"
+    },
+    {
+        "id": 4,
+        "title": "Kung Fu Fighting",
+        "excerpt": "The music “Kung Fu Fighting” comes directly from the film. It corresponds to the line because it insists on persevering.",
+        "link": "/en/kung-fu-fighting.html",
+        "picture": "/public/img/album.webp",
+        "picture_desc": "album de la musique"
+    },
+    {
+        "id": 5,
+        "title": "Mark Osborne et John Stevenson",
+        "excerpt": "Mark Osborne and John Stevenson are the directors of Kung Fu Panda. They did an incredible job of creating a film that marks all ages. How did they achieve this feat ?",
+        "link": "/en/directors.html",
+        "picture": "/public/img/realisateur-card.webp",
+        "picture_desc": "Réalisateurs du film"
+    }
+  ]
