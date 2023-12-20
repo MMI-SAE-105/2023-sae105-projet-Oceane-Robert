@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Kung Fu Fighting</title>
+</head>
+<body>
+    <header>
+        <div class="header__start">
+            <a href="/">
+                <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header__end" >
+            <a class="header__link" href="/en/index.html">
+                <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
+            </a>
+            <button class="header__menu-btn menu-btn">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu">
+                <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/replique.html">Réplique</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-panda.html">Kung Fu Panda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/pensee-sur-le-temps.html">Pensée sur le temps</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-fighting.html">Kung Fu Fighting</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/realisateurs.html">Mark Osborne et John Stevenson</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/propos.html"> A propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+        <div>
+            <img src="/public/img/album-musique.webp" alt="affiche du film">
+        </div>
+        <div class="container">
+            <h2>Kung Fu Fighting</h2>
+            <p>La chanson “Kung Fu Fighting” qui fait vibrer. “Kung Fu Fighting” et son lien fascinant avec la célèbre réplique tirée du film “Kung Fu Panda”.</p>
+            <h3>La chanson énergique qui célèbre le Kung Fu</h3>
+            <p>La chanson est entraînante et énergique. Elle est dynamique et rend hommage au monde du kung-fu avec des paroles amusantes et un rythme entraînant qui représente bien le film. L’idée est que le Kung fu est un art qui peut être apprécié par tous.</p>
+            <p>La chanson met en avant la puissance de la persévérance et de la détermination, tout comme Po. Cela nous rappelle que chacun d’entre nous a le potentiel de devenir un maître dans sa propre vie</p>
+            <figure>
+                <img src="/public/img/kungfu.webp" alt="Kung fu">
+                <figcaption>Deux personnages qui font du Kung Fu</figcaption>
+            </figure>
+            <h3>Le lien avec la philosophie du présent</h3>
+            <p>La réplique du film “Hier est derrière, demain est un mystère, et aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent”, résonne tout au long de la chanson. Les paroles parlent du moment présent, de la danse, du kung-fu et de l’énergie du présent. C’est un appel à célébrer la vie et de s’amuser à chaque moment avec enthousiasme.</p>
+            <h3>La musique comme source d’inspiration</h3>
+            <p>La musique a la possibilité de nous transporter dans un autre monde, de nous inspirer et de montrer des leçons importantes. La chanson évoque la philosophie du présent et nous rappelle que la vie est une aventure à vivre.</p>                       <p>Le film est bien nommé pour les scènes de combat qui sont à couper le souffle. Les mouvements dynamique, fluide et impressionnant à regarder. Les personnages combattent avec style et grâce, créant des séquences d’action palpitantes qui donnent envie de devenir un expert en Kung fu.</p>
+            <p>La musique est un moyen puissant de se connecter à des idées et des émotions.</p>
+            <figure>
+                <img src="/public/img/musique.webp" alt="Source d'inspiration de la musique">
+                <figcaption>La musique est une source d'inspiration dans le dessin animé</figcaption>
+            </figure>
+            <p>La musique peut nous émouvoir en nous rappelant des valeurs importantes. Elle nous rappelle que chaque jour est une opportunité d’apprendre, de grandir et de vivre au maximum de sa vie.</p>
+            <p>Embrassez le moment présent, comme Po dans son voyage vers la maîtrise du kung-fu. La musique est une force puissante. Profitez-en, car aujourd’hui est un cadeau !</p>
+            <div>
+            <p>par Océane ROBERT</p>
+            <p>publier aujourd’hui à 8h00</p>
+            </div>
+        </div>
+        <div class="article__btn"> 
+            <div>
+                <img src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
+                <a href="/fr/pensee-sur-le-temps.html">livre</a>
+            </div>
+            <div>
+                <a href="/fr/realisateurs.html">réalisateurs</a>
+                <img src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
+            </div>
+        </div>
+    </section>
+    <section class="carroussel container">
+        <div class="carroussel__titre">
+            <h2>Filmographie</h2>
+            <p>Voici une proposition de films en lien avec le film choisi pour le projet. N’hésitez pas à cliquer sur l’affiche pour avoir plus d’information.</p>
+        </div>
+            <div x-data="{
+                hrefCourant: '#ecran-1',
+                hrefCourant: '#ecran-2',
+                hrefCourant: '#ecran-3',
+                hrefCourant: '#ecran-4',
+            }">
+                <button class="carrousel__btn carrousel__btn-avant" aria-label="slide précedant" @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">
+                    &lt;
+                </button>
+                <button class="carrousel__btn carrousel__btn-apres" aria-label="slide suivant" @click="parent = $refs.parent; parent.scrollLeft += parent.clientWidth">
+                    &gt;
+                </button>
+                <div class="carrousel__parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                                  [...$refs.parent.children]
+                                   .find(e=>e.getBoundingClientRect( ).x>=0)
+                                   .id
+                                                     ">
+                    <div id="ecran-1" class="carrousel__ecran">
+                        <figure>
+                            <img src="/public/img/kungfupanda-2.webp" alt="image ecran 1">
+                            <div>
+                            <p class="caroussel__text">Kung Fu Panda 2</p>
+                            <p> Genre : action, comédie, arts martiaux</p>
+                            <p>“Kung Fu Panda 2" est la suite passionnante de Panda Pole, qui doit affronter le redoutable Seigneur Shen pour sauver la Chine.</p>
+                            <a href="https://fr.wikipedia.org/wiki/Kung_Fu_Panda_2">en savoir plus</a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel__ecran">
+                        <figure>
+                            <img src="/public/img/kungfupanda-3.webp" alt="image ecran 2">
+                            <div>
+                            <p class="caroussel__text">Kung Fu Panda 3</p>
+                            <p>Genre : action, comédie, arts martiaux</p>
+                            <p>Kung Fu Panda 3" poursuit les aventures de Po, le panda guerrier, avec un mélange de comédie, d'action et de leçons de vie. Cette fois, Po fait face à un nouvel ennemi, Kai, tout en découvrant son héritage panda.</p>
+                            <a href="https://fr.wikipedia.org/wiki/Kung_Fu_Panda_3">en savoir plus</a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel__ecran">
+                        <figure>
+                            <img src="/public/img/pingouins.webp" alt="image ecran 3">
+                            <div>
+                            <p class="caroussel__text">Les pinguoins de Madagascar</p>
+                            <p>Genre : espionnage, action, aventure, comédie</p>
+                            <p>Le film est une aventure folle qui mêle humour, action et espionnage tout en célébrant l'amitié et le devoir des pingouins. Une expérience ludique pour les fans de la série "Madagascar" et de leurs pingouins insolites.</p>
+                            <a href="phttps://fr.wikipedia.org/wiki/Les_Pingouins_de_Madagascar">en savoir plus</a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel__ecran">
+                        <figure>
+                            <img src="/public/img/madagascar.webp" alt="image ecran 4">
+                            <div>
+                            <p class="caroussel__text">Madagascar</p>
+                            <p>Genre : espionnage, action, aventure, comédie</p>
+                            <p>Le film Madagascar est une comédie d'animation de 2005. Il raconte l'histoire de quatre animaux du zoo de Central Park à New York qui s'échappent : Alex le lion, Marty le zèbre, Melman la girafe et Gloria l'hippopotame. Une belle aventure sur l'île de Madagascar.</p>
+                            <a href="https://fr.wikipedia.org/wiki/Madagascar_(film)">en savoir plus</a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <ul class="caroussel__liste-liens">
+                    <li><a href="#ecran-1" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-1'}"></a></li>
+                    <li><a href="#ecran-2" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
+                    <li><a href="#ecran-3" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
+                    <li><a href="#ecran-4" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                </ul>
+            </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Glossaire</a></li>
+            </ul>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+    <div class="footer__contact">
+        <address class="footer__address">
+          <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
+        </address>
+    </div>
+    <div class="footer__social">
+        <ul class="footer__list list-unstyled">
+          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
