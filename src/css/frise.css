@@ -2,12 +2,6 @@
     box-sizing: border-box;
 }
 
-/* Définir une couleur de fond */
-body {
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
-}
-
 /* La frise chronologique (la règle verticale) */
 .timeline {
     position: relative;
