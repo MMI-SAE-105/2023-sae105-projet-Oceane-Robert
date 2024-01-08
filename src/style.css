@@ -1,4 +1,16 @@
  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&family=Karla:wght@200;500;700&family=Merienda:wght@400;500;700&display=swap');
 
- @import '/src/css/carroussel.css';
- @import '/src/css/frise.css';
+
+ @import '/src/css/base/main.css';  
+ @import '/src/css/base/media.css';
+ @import '/src/css/components/carroussel.css';
+ @import '/src/css/components/frise.css';
+ @import '/src/css/components/button.css';
+ @import '/src/css/components/card.css';
+ @import '/src/css/components/menu.css';
+ @import '/src/css/layout/section.css';
+ @import '/src/css/layout/header.css';
+ @import '/src/css/layout/footer.css';
+ @import '/src/css/layout/form.css';
+ @import '/src/css/utils/variable.css';
+ @import '/src/css/vendor/normalize.css';

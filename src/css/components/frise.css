@@ -21,16 +21,9 @@
     margin-left: -3px;
 }
 
-/* Le conteneur autour du contenu */
-.container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
 
 /* Les cercles sur la frise chronologique */
-.container::after {
+.timeline__content::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -100,14 +93,14 @@
     }
 
     /* Conteneurs en pleine largeur */
-    .container {
+    .timeline__content {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
     /* S'assurer que toutes les flèches pointent vers la gauche */
-    .container::before {
+    .timeline__content::before {
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
