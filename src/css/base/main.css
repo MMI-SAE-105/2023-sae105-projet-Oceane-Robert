@@ -53,6 +53,7 @@ button {
 
 .container {
   padding-left: var(--space1x);
+  padding-right: var(--space1x);
 }
 
 .noscroll,
