@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--brand-vert);
-    padding: 4px;
+    padding: var(--space1x) var(--space2x) ;
 }
 
 .footer__logo {
@@ -41,7 +41,29 @@
 }
 
 .footer__mmi {
-    width: 36px;
-    height: 26px;  
+    width: 45px;
+    height: 32px;  
     margin-left: auto; 
+}
+
+.footer__item {
+    padding: 2px;
+}
+
+.footer__nom {
+    color: var(--gray-white);
+    text-align: center;
+}
+
+.menu__list {
+    color: var(--gray-white);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.footer__text {
+    color: #1D2315;
+    text-align: center;
 }
