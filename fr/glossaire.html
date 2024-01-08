@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" 
+x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/glossary.html">
-    <title>Glossaire</title>
+    <link rel="alternate" hreflang="en" href="/en/index.html">
+    <title>Accueil</title>
 </head>
-<body>
-    <header>
+<body x-data="{ atTop: true }">
+    <header
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -19,11 +22,13 @@
             <a class="header__link" href="/en/index.html">
                 <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
             </a>
-            <button class="header__menu-btn menu-btn">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
                 <span class="menu-btn__bar"></span>
             </button>
 
-            <nav class="header__menu menu">
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
                 <li class="menu__item"><a class="menu__link" href="/fr/replique.html">Réplique</a></li>
@@ -38,19 +43,21 @@
         </div>
     </header>
     <main>
-        <h2>Glossaire</h2>
-        <ul>
-            <li><span>Kung Fu Panda</span> - Un film d'animation sorti en 2008, réalisé par Mark Osborne et John Stevenson.</li>
-            <li><span>Po</span> - Le personnage principal du film, un panda maladroit qui rêve de devenir un maître du kung-fu.</li>
-            <li><span>Maître Oogway</span> - Un personnage du film qui prononce la réplique mémorable "hier est derrière, demain est mystère et aujourd'hui est un cadeau, c'est pour cela qu'on appelle le présent” et qui apprend le Kung fu à Po.</li>
-            <li><span>Persévérance</span> - La qualité de ne pas abandonner et de continuer malgré les obstacles et les échecs.</li>
-            <li><span>Animation</span> - La technique de création d'images en mouvement à travers une série de dessins ou de modèles.</li>
-            <li><span>Philosophie du temps</span> - La réflexion sur la manière dont les êtres humains perçoivent et utilisent le temps dans leur vie.</li>
-            <li><span>Kung Fu</span> - Un art martial chinois qui se caractérise par des mouvements rapides et des techniques de combat spécifiques</li>
-            <li><span>Cinéma d'animation</span> - L'art de créer des films en faisant bouger des images fixes pour donner l'impression de mouvement.</li>
-            <li><span>Réalisateurs</span> - Les personnes responsables de la création et de la direction d'un film.</li>
-            <li><span>Harmonie</span> - L'état de concordance, d'équilibre et de cohésion entre différentes parties ou éléments d'une œuvre ou d'une équipe.</li>
-        </ul>
+        <section class=" glossary container">
+            <h2 class="title">Glossaire</h2>
+            <ol>
+                <li><span>Kung Fu Panda</span> - Un film d'animation sorti en 2008, réalisé par Mark Osborne et John Stevenson.</li>
+                <li><span>Po</span> - Le personnage principal du film, un panda maladroit qui rêve de devenir un maître du kung-fu.</li>
+                <li><span>Maître Oogway</span> - Un personnage du film qui prononce la réplique mémorable "hier est derrière, demain est mystère et aujourd'hui est un cadeau, c'est pour cela qu'on appelle le présent” et qui apprend le Kung fu à Po.</li>
+                <li><span>Persévérance</span> - La qualité de ne pas abandonner et de continuer malgré les obstacles et les échecs.</li>
+                <li><span>Animation</span> - La technique de création d'images en mouvement à travers une série de dessins ou de modèles.</li>
+                <li><span>Philosophie du temps</span> - La réflexion sur la manière dont les êtres humains perçoivent et utilisent le temps dans leur vie.</li>
+                <li><span>Kung Fu</span> - Un art martial chinois qui se caractérise par des mouvements rapides et des techniques de combat spécifiques</li>
+                <li><span>Cinéma d'animation</span> - L'art de créer des films en faisant bouger des images fixes pour donner l'impression de mouvement.</li>
+                <li><span>Réalisateurs</span> - Les personnes responsables de la création et de la direction d'un film.</li>
+                <li><span>Harmonie</span> - L'état de concordance, d'équilibre et de cohésion entre différentes parties ou éléments d'une œuvre ou d'une équipe.</li>
+            </ol>
+        </section>
     </main>
     <footer class="footer">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>

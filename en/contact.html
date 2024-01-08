@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" 
+x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="fr" href="/fr/contact.html">
-    <title>Contact</title>
+    <link rel="alternate" hreflang="en" href="/en/index.html">
+    <title>About</title>
 </head>
-<body>
-    <header>
+<body x-data="{ atTop: true }">
+    <header
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -19,20 +22,22 @@
             <a class="header__link" href="/en/index.html">
                 <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
             </a>
-            <button class="header__menu-btn menu-btn">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
                 <span class="menu-btn__bar"></span>
             </button>
 
-            <nav class="header__menu menu">
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/replique.html">Réplique</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-panda.html">Kung Fu Panda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/pensee-sur-le-temps.html">Pensée sur le temps</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-fighting.html">Kung Fu Fighting</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/realisateurs.html">Mark Osborne et John Stevenson</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/propos.html"> A propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/replique.html">Replica</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/kung-fu-panda.html">Kung Fu Panda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/pensee-sur-le-temps.html">Thinking about time</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/kung-fu-fighting.html">Kung Fu Fighting</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/realisateurs.html">Mark Osborne and John Stevenson</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossaire.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/propos.html"> About</a></li>
                 </ul>
             </nav>
         </div>
