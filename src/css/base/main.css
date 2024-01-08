@@ -11,8 +11,7 @@ body {
   font-weight: lighter;
 }
 
-h1,
-h2 {
+h1 {
   font-family: var(--font-merienda);
   font-weight: normal;
   line-height: 1.1;
@@ -28,11 +27,14 @@ h2 {
   font-size: var(--title-2);
   color: var(--brand-vert);
   text-align: center;
+  font-family: var(--font-kanit);
+  font-weight: normal;
+
 }
 
 h3 {
     font-size: var(--title-3);
-  line-height: 1.4;
+  line-height: 2.4;
   font-weight: bold;
 }
 
@@ -59,4 +61,29 @@ button {
 .noscroll,
 .noscroll body {
   overflow: hidden;
+}
+
+.glossary {
+    font-family: var(--font-karla);
+    font-weight: normal;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.citation {
+    font-size: var(--text-sm);
+}
+
+.publication {
+    font-size: var(--text-sm);
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-top: 13px;
+    line-height:0.7;
+}
+
+.publication__text {
+    color: var(--gray-600);
 }

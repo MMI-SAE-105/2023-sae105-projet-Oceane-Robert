@@ -1,0 +1,25 @@
+.hero {
+    display: flex;
+}
+.hero__figure {
+    position: relative;
+    width: 40%; 
+}
+
+.hero__img {
+    width: 100%;
+    position: relative;
+}
+
+.hero__legend {
+    position: absolute; 
+    font-size: var(--text-sm);
+    margin-left: 15%;
+}
+
+.hero__text {
+    position: relative;
+    width: 100%;
+    margin-top: -10px;
+    padding: 0;
+}
