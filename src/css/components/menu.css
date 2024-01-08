@@ -1,7 +1,6 @@
 .menu {
     visibility: hidden;
     opacity: 0;
-    overflow: hidden;
     display: flex;
     position: fixed;
     top: 0; bottom: 0;
@@ -11,14 +10,9 @@
     letter-spacing: var(--letter-spacing);
     transition: all .4s ease-in-out;
     z-index: 2;
-    height: 387px;
+    height: 500px;
     padding: var(--space3x);
 }
-.hero {
-    position: relative;
-    margin-top: 60px;
-    padding: none;
-} 
 
 .menu--open {
     visibility: visible;
@@ -41,12 +35,11 @@ text-decoration: none;
 }
 
 .menu-btn {
+top: 1px;
 position: relative;
 z-index: 3;
-width: 30px; 
 display: flex;
-width: 32px;
-height: 22.737px;
+width: 24px;
 padding: 5.684px 4px 6.395px 4px;
 justify-content: center;
 align-items: center;
@@ -63,17 +56,17 @@ height: 2px;
 width: 100%;
 position: absolute;
 left: 0;
-z-index: 10;
 transition: all .4s ease-in-out;
 z-index:2;
+border-radius: 20px;
 }
 
 .menu-btn__bar::before {
-top: -10px;
+top: -8px;
 }
 
 .menu-btn__bar::after {
-top: 10px;
+top: 8px;
 }
 
 .menu-btn--open .menu-btn__bar,

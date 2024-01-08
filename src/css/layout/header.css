@@ -12,16 +12,16 @@
     padding: 5px;
     z-index: 2;
 }
-
-.header__logo {
-    display: block;
-    width: 45px;
-    height: 44px;
-    flex-shrink: 0;
-    margin-left: 5px ;
-    border: none;
-    background: transparent;
+.header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: 53px;
 }
+
 
 .header__menu-link {
     color: black;
@@ -38,4 +38,18 @@
 .header__end {
     display: flex;
    justify-content: space-between;
+}
+
+.header__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
