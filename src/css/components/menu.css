@@ -1,17 +1,15 @@
 .menu {
-    visibility: hidden;
+    visibility: visible;
     opacity: 0;
-    display: flex;
     position: fixed;
-    top: 0; bottom: 0;
+    top: 53px; bottom: 0;
     left: 0; right : 0;
     background-color: var(--gray-white);
     font-size: var(--title-3);
     letter-spacing: var(--letter-spacing);
     transition: all .4s ease-in-out;
     z-index: 2;
-    height: 500px;
-    padding: var(--space3x);
+    height: 39.5%;
 }
 
 .menu--open {
@@ -24,7 +22,7 @@ margin-top: 0;
 }
 
 .menu__item {
-margin-top: 10%;
+padding: 5px 0px 5px 10px;
 border-bottom: 1px solid var(--brand-vert);
 }
 
