@@ -6,13 +6,13 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>Accueil</title>
+    <link rel="alternate" hreflang="en" href="/en/replica.html">
+    <title>Pensée sur le temps </title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -44,38 +44,40 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     </header>
     <main>
         <section>
-        <div>
+        <div class="header__img">
             <img src="/public/img/andre-comte-sponville.webp" alt="affiche du film">
         </div>
         <div class="container">
             <h2>Pensée sur le temps</h2>
             <p>La pensée sur le temps d’André Comte-Sponville et son lien avec la réplique “hier est derrière, demain est mystère et aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent”. Cette réplique a une signification profonde qui peut aider à mieux comprendre notre rapport au temps avec l’aide du livre sur la pensée sur le temps.</p>
-            <div>
-            <figure>
-                <img src="/public/img/couv_livre.webp" alt="couverture du livre">
-                <figcaption>Première couverture du livre</figcaption>
+            <div class="hero">
+            <figure class="hero__figure">
+                <img class="hero__img" src="/public/img/couv_livre.webp" alt="couverture du livre">
+                <figcaption class="hero__legend">Première couverture du livre</figcaption>
             </figure>
+            <div class="hero__text">
             <h3>Le temps dans la littérature</h3>
             <p>Le livre est un moyen puissant d’explorer des idées complexes et la notion du temps. Le livre aborde la façon dont nous percevons, mesurons et vivons le temps. Nous avons la possibilité de plonger dans l’histoire et de découvrir différentes perspectives sur le temps.</p>
             </div>
+            </div>
             <h3>L’art du Kung Fu Panda et la philosophie du temps</h3>
-            <p>Dans <a href="/fr/glossaire.html">Kung Fu Panda</a>, cette approche lui permet de se concentrer sur ses rêves et de persévérer dans son voyage pour devenir un maître <a href="/fr/glossaire.html">kung-fu</a>.</p>
+            <p>Dans <a class="glossary" href="/fr/glossaire.html">Kung Fu Panda</a>, cette approche lui permet de se concentrer sur ses rêves et de persévérer dans son voyage pour devenir un maître <a class="glossary" href="/fr/glossaire.html">kung-fu</a>.</p>
             <p>Cette philosophie du temps rappelle que notre moment actuel est le seul sur lequel nous ayons une affluence directe. Le passé est une leçon et l’avenir est une opportunité, mais c’est dans le présent que nous pouvons réellement agir.</p>            
             <figure>
                 <img src="/public/img/voyage.webp" alt="voyage">
                 <figcaption>Philosophie du temps</figcaption>
             </figure>
-            <p>Le temps est mystérieux. On ne sait pas ce que l’avenir nous réserve qui est très bien expliqué dans le livre sur la pensée sur le temps par André Comte-Sponville. En comprenant que le présent, nous devons vivre notre vie avec intensité et persévérance, comme <a href="/fr/glossaire.html">Po</a> Dans <a href="/fr/glossaire.html">“Kung Fu Panda”</a>. Rappelez-vous que chaque jour est une chance de devenir une meilleure version de vous-même. Le présent est notre véritable pouvoir.</p>
+            <p>Le temps est mystérieux. On ne sait pas ce que l’avenir nous réserve qui est très bien expliqué dans le livre sur la pensée sur le temps par André Comte-Sponville. En comprenant que le présent, nous devons vivre notre vie avec intensité et persévérance, comme <a class="glossary" href="/fr/glossaire.html">Po</a> Dans <a class="glossary" href="/fr/glossaire.html">“Kung Fu Panda”</a>. Rappelez-vous que chaque jour est une chance de devenir une meilleure version de vous-même. Le présent est notre véritable pouvoir.</p>
             <div class="publication">
             <p>par Océane ROBERT</p>
             <p>publier aujourd’hui à 8h00</p>
             </div>
         </div>
      </section>   
-     <section>
-        <div>
-            <h2>Bibliographie</h2>
-            <p>Envie de découvrir d'autres livres...</p>
+     <section class="container">
+        <div class="accordeon">
+            <h2 class="accordeon__title">Bibliographie</h2>
+            <p class="accordeon__text">Envie de découvrir d'autres livres...</p>
         </div>
         <div class="timeline">
             <p>Ceci est une liste de livres qui pourrait approfondir votre recherche sur la citation et le film en apprentissage.</p>
