@@ -70,7 +70,7 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
             <p>Le temps est mystérieux. On ne sait pas ce que l’avenir nous réserve qui est très bien expliqué dans le livre sur la pensée sur le temps par André Comte-Sponville. En comprenant que le présent, nous devons vivre notre vie avec intensité et persévérance, comme <a class="glossary" href="/fr/glossaire.html">Po</a> Dans <a class="glossary" href="/fr/glossaire.html">“Kung Fu Panda”</a>. Rappelez-vous que chaque jour est une chance de devenir une meilleure version de vous-même. Le présent est notre véritable pouvoir.</p>
             <div class="publication">
             <p>par Océane ROBERT</p>
-            <p>publier aujourd’hui à 8h00</p>
+            <p class="publication__text">publier aujourd’hui à 8h00</p>
             </div>
         </div>
      </section>   
@@ -81,77 +81,85 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         </div>
         <div class="timeline">
             <p>Ceci est une liste de livres qui pourrait approfondir votre recherche sur la citation et le film en apprentissage.</p>
-        <div class="timeline__content left">
-        <div class="content ">
-            <img src="/public/img/le-guerrier-legendaire.webp" alt="Kung Fu Panda Tome 1 - Le Guerrier Légendaire">
-            <div>
-                <p><strong>Titre :</strong> Kung Fu Panda Tome 1 - Le Guerrier Légendaire</p>
-                <p><strong>Auteur :</strong> Takafumi Adachi</p>
-                <p><strong>Date :</strong> 17 février 2009</p>
+            <div class="timeline__content">
+                <div class="content left">
+                    <img src="/public/img/le-guerrier-legendaire.webp" alt="Kung Fu Panda Tome 1 - Le Guerrier Légendaire">
+                    <div>
+                        <p><strong>Titre :</strong> Kung Fu Panda Tome 1 - Le Guerrier Légendaire</p>
+                        <p><strong>Auteur :</strong> Takafumi Adachi</p>
+                        <p><strong>Date :</strong> 17 février 2009</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="timeline__content right">
-        <div class="content">
-            <img src="/public/img/le-parchemin-du-dragon.webp" alt="Kung Fu Panda Tome  - Le Parchemin du Dragon">
-            <div>
-                <p><strong>Titre :</strong> Kung Fu Panda Tome 2 - Le Parchemin du Dragon</p>
-                <p><strong>Auteur :</strong> Takafumi Adachi</p>
-                <p><strong>Date :</strong> février 2009</p>
-            </div></div>
-        </div>
-        <div class="content">
-            <img src="/public/img/notions-elementaires.webp" alt="Kung Fu Panda 2 Tome 3 - Notions Élémentaires">
-            <div>
-                <p><strong>Titre :</strong> Kung Fu Panda 2 Tome 3 - Notions Élémentaires</p>
-                <p><strong>Auteur :</strong> Takafumi Adachi</p>
-                <p><strong>Date :</strong> 4 avril 2012</p>
+            <div class="timeline__content">
+                <div class="content right">
+                    <img src="/public/img/le-parchemin-du-dragon.webp" alt="Kung Fu Panda Tome  - Le Parchemin du Dragon">
+                    <div>
+                        <p><strong>Titre :</strong> Kung Fu Panda Tome 2 - Le Parchemin du Dragon</p>
+                        <p><strong>Auteur :</strong> Takafumi Adachi</p>
+                        <p><strong>Date :</strong> février 2009</p>
+                    </div>
+                </div>
             </div>
+            <div class="timeline__content">
+                <div class="content left">
+                    <img src="/public/img/notions-elementaires.webp" alt="Kung Fu Panda 2 Tome 3 - Notions Élémentaires">
+                    <div>
+                        <p><strong>Titre :</strong> Kung Fu Panda 2 Tome 3 - Notions Élémentaires</p>
+                        <p><strong>Auteur :</strong> Takafumi Adachi</p>
+                        <p><strong>Date :</strong> 4 avril 2012</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__content">
+                <div class="content right">
+                    <img src="/public/img/amis-a-jamais.webp" alt="Kung Fu Panda 2 Tome 4 - Amis à jamais ">
+                    <p><strong>Titre :</strong> Kung Fu Panda 2 Tome 4 - Amis à jamais</p>
+                    <p><strong>Auteur :</strong> Takafumi Adachi</p>
+                    <p><strong>Date :</strong> 14 novembre 2012</p>
+                </div>
+            </div>
+            <div class="timeline__content">
+                <div class="content left">
+                    <img src="/public/img/soiree-entre-filles.webp" alt="Kung Fu Panda 2 Tome 5 - Soirée entre filles ">
+                    <p><strong>Titre :</strong> Kung Fu Panda 2 Tome 5 - Soirée entre filles</p>
+                    <p><strong>Auteur :</strong> Takafumi Adachi</p>
+                    <p><strong>Date :</strong> 12 juin 2013</p>
+                </div>
+            </div>    
         </div>
-        <div class="content">
-            <img src="/public/img/amis-a-jamais.webp" alt="Kung Fu Panda 2 Tome 4 - Amis à jamais ">
-            <p><strong>Titre :</strong> Kung Fu Panda 2 Tome 4 - Amis à jamais</p>
-            <p><strong>Auteur :</strong> Takafumi Adachi</p>
-            <p><strong>Date :</strong> 14 novembre 2012</p>
-        </div>
-        <div class="content">
-            <img src="/public/img/soiree-entre-filles.webp" alt="Kung Fu Panda 2 Tome 5 - Soirée entre filles ">
-            <p><strong>Titre :</strong> Kung Fu Panda 2 Tome 5 - Soirée entre filles</p>
-            <p><strong>Auteur :</strong> Takafumi Adachi</p>
-            <p><strong>Date :</strong> 12 juin 2013</p>
-        </div>
-    </div>
-    </div>
      </section> 
-        <div class="article__btn"> 
-        <div>
-            <img src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
-            <a href="/fr/kung-fu-panda.html">Film</a>
+        <div class="button"> 
+        <div class="button__content-left">
+            <img class="button__fleche-left" src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
+            <a class="button__text-left" href="/fr/kung-fu-panda.html">Film</a>
         </div>
-            <a href="/fr/kung-fu-fighting.html">Musique</a>
-            <img src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
+        <div class="button__content-right">
+            <a class="button__text-right" href="/fr/kung-fu-fighting.html">Musique</a>
+            <img class="button__fleche-right" src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
         </div>
     </main>
     <footer class="footer">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Glossaire</a></li>
+                <li><a class="footer__menu-list" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__menu-list" href="/fr/propos.html">A propos</a></li>
+                <li><a class="footer__menu-list" href="/fr/glossaire.html">Glossaire</a></li>
             </ul>
         </nav>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
     <div class="footer__contact">
-        <address class="footer__address">
+        <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
         </address>
     </div>
-    <div class="footer__social">
+    <div class="footer__reseaux">
         <ul class="footer__list list-unstyled">
-          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+          <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
         </ul>
     </div>
 </footer>

@@ -10,32 +10,33 @@
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 4px;
     background-color: black;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px;
+    margin-top: 52px;
 }
 
 
 /* Les cercles sur la frise chronologique */
-.timeline__content::after {
+.content::after {
     content: '';
+    display: flex;
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
     background-color: black;
     border: 4px solid white;
-    top: 15px;
+    top: 52px;
     border-radius: 50%;
     z-index: 1;
+    margin-top: 50%;
 }
-
+/* Et ainsi de suite pour chaque élément .timeline__content suivant */
 /* Placer le conteneur à gauche */
 .left {
-    left: 0;
+    left: -15%;
 }
 
 /* Placer le conteneur à droite */
@@ -43,31 +44,6 @@
     left: 50%;
 }
 
-/* Ajouter des flèches au conteneur gauche (pointant vers la droite) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-/* Ajouter des flèches au conteneur droit (pointant vers la gauche) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    width: 0;
-    z-index: 1;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
 
 /* Corriger le cercle pour les conteneurs du côté droit */
 .right::after {
@@ -76,18 +52,11 @@
 
 /* Le contenu réel */
 .content {
-    padding: 20px 30px;
-    background-color: white;
     position: relative;
     border-radius: 6px;
+    width: 50%;
 }
 
-/* Media queries - Frise chronologique responsive sur les écrans de moins de 600px de large */
-@media screen and (max-width: 600px) {
-    /* Placer la frise chronologique à gauche */
-    .timeline::after {
-        left: 50%;
-    }
 
     /* Conteneurs en pleine largeur */
     .timeline__content {
@@ -105,12 +74,12 @@
     }
 
     /* S'assurer que tous les cercles sont au même endroit */
-    .left::after, .right::after {
-        left: 46%;
+    .left::after {
+        left: 105%;
     }
 
-    /* Faire en sorte que tous les conteneurs droits se comportent comme les gauches */
-    .right {
-        left: 0%;
+    .right::after {
+        left: -24%;
     }
-}
+
+
