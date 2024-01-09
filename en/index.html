@@ -6,21 +6,21 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>About</title>
+    <link rel="alternate" hreflang="fr" href="/fr/index.html">
+    <title>Home</title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
             </a>
         </div>
         <div class="header__end" >
-            <a class="header__link" href="/en/index.html">
-                <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
+            <a class="header__link" href="/fr/index.html">
+                <img src="/public/icons/france.svg" alt="drapeau anglais">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -43,7 +43,7 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         </div>
     </header>
     <main>
-        <div>
+        <div class="header__img">
             <img src="/public/img/image_introduction.webp" alt="po dans l'introduction">
         </div>
         <section class="section container"
@@ -75,23 +75,23 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
             <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
             <nav class="footer__menu">
                 <ul class="list-unstyled">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Glossaire</a></li>
+                <li><a class="footer__menu-list"  href="#">Contact</a></li>
+                <li><a class="footer__menu-list"  href="#">About</a></li>
+                <li><a class="footer__menu-list"  href="#">Glossarry</a></li>
                 </ul>
             </nav>
-            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+            <p class="footer__text">Project carried out as part of an educational exercise at the MMi Montbéliard department</p>
         <div class="footer__contact">
-            <address class="footer__address">
+            <address class="footer__mail">
               <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
             </address>
         </div>
-        <div class="footer__social">
+        <div class="footer__reseaux">
             <ul class="footer__list list-unstyled">
-              <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-              <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-              <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-                <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+              <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+              <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+              <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+                <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
             </ul>
         </div>
     </footer>

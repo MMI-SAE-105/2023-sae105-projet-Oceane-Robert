@@ -36,7 +36,7 @@
     padding-left: var(--space2x);
     padding-right: var(--space2x);
     padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
   .card__link {
@@ -46,4 +46,5 @@
     border-bottom: 1px solid;
     text-transform: uppercase;
     float: right;
+    padding-top:5px;
   }
