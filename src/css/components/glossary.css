@@ -1,0 +1,20 @@
+.glossary__mot {
+    font-family: var(--font-karla);
+    font-weight: normal;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.glossary__title{
+    color: var(--brand-vert);
+    text-align: center;
+}
+
+.glossary span {
+    color: var(--brand-jaune);
+    font-weight: bold;
+}
+
+.glossary {
+    margin-top: 53px;
+}

@@ -6,13 +6,13 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>Accueil</title>
+    <link rel="alternate" hreflang="en" href="/en/kung-fu-fighting.html">
+    <title>Kung Fu Fighting </title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -44,43 +44,44 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     </header>
     <main>
         <section>
-        <div>
+        <div class="header__img">
             <img src="/public/img/album-musique.webp" alt="affiche du film">
         </div>
         <div class="container">
             <h2>Kung Fu Fighting</h2>
             <p>La chanson “Kung Fu Fighting” qui fait vibrer. “Kung Fu Fighting” et son lien fascinant avec la célèbre réplique tirée du film <a href="/fr/glossaire.html">“Kung Fu Panda”</a>.</p>
             <h3>La chanson énergique qui célèbre le Kung Fu</h3>
-            <p>La chanson est entraînante et énergique. Elle est dynamique et rend hommage au monde du <a class="glossary" href="/fr/glossaire.html">kung-fu</a> avec des paroles amusantes et un rythme entraînant qui représente bien le film. L’idée est que le <a class="glossary" href="/fr/glossaire.html">Kung fu</a> est un art qui peut être apprécié par tous.</p>
-            <p>La chanson met en avant la puissance de la <a class="glossary" href="/fr/glossaire.html">persévérance</a> et de la détermination, tout comme <a class="glossary" href="/fr/glossaire.html">Po</a>. Cela nous rappelle que chacun d’entre nous a le potentiel de devenir un maître dans sa propre vie</p>
+            <p>La chanson est entraînante et énergique. Elle est dynamique et rend hommage au monde du <a class="glossary__mot" href="/fr/glossaire.html">kung-fu</a> avec des paroles amusantes et un rythme entraînant qui représente bien le film. L’idée est que le <a class="glossary__mot" href="/fr/glossaire.html">Kung fu</a> est un art qui peut être apprécié par tous.</p>
+            <p>La chanson met en avant la puissance de la <a class="glossary__mot" href="/fr/glossaire.html">persévérance</a> et de la détermination, tout comme <a class="glossary__mot" href="/fr/glossaire.html">Po</a>. Cela nous rappelle que chacun d’entre nous a le potentiel de devenir un maître dans sa propre vie</p>
             <figure>
                 <img src="/public/img/kungfu.webp" alt="Kung fu">
                 <figcaption>Deux personnages qui font du Kung Fu</figcaption>
             </figure>
             <h3>Le lien avec la philosophie du présent</h3>
-            <p>La réplique du film “Hier est derrière, demain est un mystère, et aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent”, résonne tout au long de la chanson. Les paroles parlent du moment présent, de la danse, du <a class="glossary" href="/fr/glossaire.html">kung-fu</a> et de l’énergie du présent. C’est un appel à célébrer la vie et de s’amuser à chaque moment avec enthousiasme.</p>
+            <p>La réplique du film “Hier est derrière, demain est un mystère, et aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent”, résonne tout au long de la chanson. Les paroles parlent du moment présent, de la danse, du <a class="glossary__mot" href="/fr/glossaire.html">kung-fu</a> et de l’énergie du présent. C’est un appel à célébrer la vie et de s’amuser à chaque moment avec enthousiasme.</p>
             <h3>La musique comme source d’inspiration</h3>
-            <p>La musique a la possibilité de nous transporter dans un autre monde, de nous inspirer et de montrer des leçons importantes. La chanson évoque la philosophie du présent et nous rappelle que la vie est une aventure à vivre.</p>                       <p>Le film est bien nommé pour les scènes de combat qui sont à couper le souffle. Les mouvements dynamique, fluide et impressionnant à regarder. Les personnages combattent avec style et grâce, créant des séquences d’action palpitantes qui donnent envie de devenir un expert en Kung fu.</p>
+            <p>La musique a la possibilité de nous transporter dans un autre monde, de nous inspirer et de montrer des leçons importantes. La chanson évoque la philosophie du présent et nous rappelle que la vie est une aventure à vivre.</p>                       
+            <p>Le film est bien nommé pour les scènes de combat qui sont à couper le souffle. Les mouvements dynamique, fluide et impressionnant à regarder. Les personnages combattent avec style et grâce, créant des séquences d’action palpitantes qui donnent envie de devenir un expert en Kung fu.</p>
             <p>La musique est un moyen puissant de se connecter à des idées et des émotions.</p>
             <figure>
                 <img src="/public/img/musique.webp" alt="Source d'inspiration de la musique">
                 <figcaption>La musique est une source d'inspiration dans le dessin animé</figcaption>
             </figure>
             <p>La musique peut nous émouvoir en nous rappelant des valeurs importantes. Elle nous rappelle que chaque jour est une opportunité d’apprendre, de grandir et de vivre au maximum de sa vie.</p>
-            <p>Embrassez le moment présent, comme <a href="/fr/glossaire.html">Po</a> dans son voyage vers la maîtrise du <a href="/fr/glossaire.html">kung-fu</a>. La musique est une force puissante. Profitez-en, car aujourd’hui est un cadeau !</p>
-            <div>
+            <p>Embrassez le moment présent, comme <a class="glossary__mot" href="/fr/glossaire.html">Po</a> dans son voyage vers la maîtrise du <a class="glossary__mot" href="/fr/glossaire.html">kung-fu</a>. La musique est une force puissante. Profitez-en, car aujourd’hui est un cadeau !</p>
+            <div class="publication">
             <p>par Océane ROBERT</p>
-            <p>publier aujourd’hui à 8h00</p>
+            <p class="publication__text">publier aujourd’hui à 8h00</p>
             </div>
         </div>
-        <div class="article__btn"> 
-            <div>
-                <img src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
-                <a href="/fr/pensee-sur-le-temps.html">livre</a>
+        <div class="button container"> 
+            <div class="button__content-left">
+                <img class="button__fleche-left" src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
+                <a class="button__text-left" href="/fr/pensee-sur-le-temps.html">livre</a>
             </div>
-            <div>
-                <a href="/fr/realisateurs.html">réalisateurs</a>
-                <img src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
+            <div class="button__content-right">
+                <a class="button__text-right" href="/fr/realisateurs.html">réalisateurs</a>
+                <img class="button__fleche-right" src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
             </div>
         </div>
     </section>
@@ -89,23 +90,23 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Glossaire</a></li>
+                <li><a class="footer__menu-list" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__menu-list" href="/fr/propos.html">A propos</a></li>
+                <li><a class="footer__menu-list" href="/fr/glossaire.html">Glossaire</a></li>
             </ul>
         </nav>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
     <div class="footer__contact">
-        <address class="footer__address">
+        <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
         </address>
     </div>
-    <div class="footer__social">
+    <div class="footer__reseaux">
         <ul class="footer__list list-unstyled">
-          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+          <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
         </ul>
     </div>
 </footer>

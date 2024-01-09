@@ -56,3 +56,13 @@
     margin-bottom: 19px;
     justify-content: flex-end;
 }
+
+.button__content-musique{
+    background-color: var(--brand-jaune);
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+    margin-bottom: 19px;
+    justify-content: flex-end;
+}
+

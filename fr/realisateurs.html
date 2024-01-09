@@ -6,13 +6,13 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>Accueil</title>
+    <link rel="alternate" hreflang="en" href="/en/directors.html">
+    <title>Réalisateurs </title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -43,51 +43,51 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         </div>
     </header>
     <main>
-        <div>
+        <div class="header__img">
             <img src="/public/img/realisateur-ensemble.webp" alt="réalisatuer ensemble">
         </div>
         <div class="container">
             <h2>Mark Obsorne et john Stevenson</h2>
-            <p>Nous allons plonger dans le monde magique du <a href="/fr/glossaire.html">cinéma d’animation</a> en racontant les deux cerveaux qui ont donné vie au film de <a href="/fr/glossaire.html">“Kung Fu Panda”</a> Mark Osborne et John Stevenson ont conquis le cœur du monde entier.</p>
-            <div>
-                <figure>
-                    <img src="/public/img/mark-osborne.webp" alt="mark osborne">
-                    <figcaption>Mark Osborne</figcaption>
+            <p>Nous allons plonger dans le monde magique du <a class="glossary__mot" href="/fr/glossaire.html">cinéma d’animation</a> en racontant les deux cerveaux qui ont donné vie au film de <a class="glossary__mot" href="/fr/glossaire.html">“Kung Fu Panda”</a> Mark Osborne et John Stevenson ont conquis le cœur du monde entier.</p>
+            <div class="hero">
+                <figure class="hero__figure">
+                    <img class="hero__img" src="/public/img/mark-osborne.webp" alt="mark osborne">
+                    <figcaption class="hero__legend">Mark Osborne</figcaption>
                 </figure>
-                <div>
+                <div class="hero__text">
                     <h3>Mark Osborne</h3>
-                    <p>Mark Osborne est le cerveau derrière la caméra qui a aidé à donner vie à l’histoire fascinante de <a href="/fr/glossaire.html">Po</a> et son voyage. Osborne est un créatif qui a su capturer l’essence du <a href="/fr/glossaire.html">kung-fu</a>, de la comédie et de l’émotion inoubliable.</p>
+                    <p>Mark Osborne est le cerveau derrière la caméra qui a aidé à donner vie à l’histoire fascinante de <a class="glossary__mot" href="/fr/glossaire.html">Po</a> et son voyage. Osborne est un créatif qui a su capturer l’essence du <a class="glossary__mot" href="/fr/glossaire.html">kung-fu</a>, de la comédie et de l’émotion inoubliable.</p>
                 </div>
             </div>
             <p>Il a veillé à ce que chaque scène soit super bien animée, créant ainsi un monde qui a transporté les spectateurs dans une aventure extraordinaire.</p>
-            <div>
-                <figure>
-                    <img src="/public/img/john-stevenson.webp" alt="John Stevenson">
-                    <figcaption>Portrait John Stevenson</figcaption>
-                </figure>
-                <div>
+            <div class="hero">
+                <div class="hero__text">
                     <h3>John Stevenson</h3>
-                    <p>John Stevenson a apporté une véritable authenticité aux scènes de combats épiques. Stevenson s’est assuré que les mouvements des personnages soient fluides et réalistes, tout en restant fidèles aux techniques du <a href="/fr/glossaire.html">kung-fu</a>.</p>
-                </div>
+                    <p>John Stevenson a apporté une véritable authenticité aux scènes de combats épiques. Stevenson s’est assuré que les mouvements des personnages soient fluides et réalistes, tout en restant fidèles aux techniques du <a class="glossary__mot" href="/fr/glossaire.html">kung-fu</a>.</p>
+                </div>        
+                <figure class="hero__figure">
+                    <img class="hero__img" src="/public/img/john-stevenson.webp" alt="John Stevenson">
+                    <figcaption class="hero__legend">Portrait John Stevenson</figcaption>
+                </figure>
             </div>
             <p>Stevenson a contribué aussi à créer des séquences de combat dynamiques et palpitantes. Les scènes de combat sont devenues des points forts du film, captivant le public à tous âges.</p>
             <h3>L’harmonie de deux esprits</h3>
-            <p>La collaboration a été essentielle pour donner vie à <a href="/fr/glossaire.html">“Kung Fu Panda”</a>. Leurs harmonies unies ont créé un film qui allie action, comédie et des leçons profondes.</p>
+            <p>La collaboration a été essentielle pour donner vie à <a class="glossary__mot" href="/fr/glossaire.html">“Kung Fu Panda”</a>. Leurs harmonies unies ont créé un film qui allie action, comédie et des leçons profondes.</p>
             <p>Mark Osborne et John Stevenson ont suivi leur vision et ont travaillé en équipe pour créer un film qui a touché le cœur du monde entier.</p>
             <figure>
                 <img src="/public/img/harmonie.webp" alt="réalisateurs">
                 <figcaption>L'harmonie des deux esprits dans Kung Fu Panda</figcaption>
             </figure>
-            <p>Mark Osborne et John Stevenson ont l’art de raconter des histoires à travers le cinéma d’animation. Leur travail a laissé une empreinte monumentale à travers les générations de tout genre. Leur créativité et leur expertise ont réalisé un film incontournable. Nous espérons que leur histoire vous inspire à suivre vos propres rêves. Alors, préparez-vous à voyager dans l’univers épique de <a href="/fr/glossaire.html">“Kung Fu Panda”</a> en appréciant les talents exceptionnels des réalisateurs.</p>
-            <div>
+            <p>Mark Osborne et John Stevenson ont l’art de raconter des histoires à travers le cinéma d’animation. Leur travail a laissé une empreinte monumentale à travers les générations de tout genre. Leur créativité et leur expertise ont réalisé un film incontournable. Nous espérons que leur histoire vous inspire à suivre vos propres rêves. Alors, préparez-vous à voyager dans l’univers épique de <a class="glossary__mot" href="/fr/glossaire.html">“Kung Fu Panda”</a> en appréciant les talents exceptionnels des réalisateurs.</p>
+            <div class="publication">
                 <p>par Océane ROBERT</p>
-                <p>publier aujourd’hui à 8h00</p>
+                <p class="publication__text">publier aujourd’hui à 8h00</p>
             </div>
         </div>
-        <div class="article__btn"> 
-            <div>
-                <img src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
-                <a href="/fr/kung-fu-fighting.html">Musique</a>
+        <div class="button"> 
+            <div class="button__content-musique">
+                <img class="button__fleche-right" src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
+                <a class="button__text-right" href="/fr/kung-fu-fighting.html">Musique</a>
             </div>
         </div>
     </main>
@@ -95,23 +95,23 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Glossaire</a></li>
+                <li><a class="footer__menu-list" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__menu-list" href="/fr/propos.html">A propos</a></li>
+                <li><a class="footer__menu-list" href="/fr/glossaire.html">Glossaire</a></li>
             </ul>
         </nav>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
     <div class="footer__contact">
-        <address class="footer__address">
+        <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
         </address>
     </div>
-    <div class="footer__social">
+    <div class="footer__reseaux">
         <ul class="footer__list list-unstyled">
-          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+          <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
         </ul>
     </div>
 </footer>
