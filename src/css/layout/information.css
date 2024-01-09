@@ -1,0 +1,8 @@
+.information__lien {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.information__title {
+    margin-top: 53px;
+}

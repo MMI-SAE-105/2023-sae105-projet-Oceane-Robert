@@ -6,13 +6,13 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>Accueil</title>
+    <link rel="alternate" hreflang="en" href="/en/replica.html">
+    <title>A propos</title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -43,44 +43,45 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         </div>
     </header>
     <main>
-        <h2>A propos</h2>
+        <section class="container">
+        <h2 class="information__title">A propos</h2>
         <p>Bienvenue sur notre projet “Réplique” ! Je suis Océane Robert, étudiante en première année de BUT MMI à Montbéliard, et je suis passionnée par le pouvoir des citations et des répliques marquantes. Notre objectif est de créer un site captivant autour de ce thème, combinant l'univers du temps et l'art martial du Kung Fu, inspiré à la fois de ma réplique personnelle et du film "Kung Fu Panda".</p>
         <p>Notre groupe est constitué de divers talents, chacun ayant choisi un film et une réplique propre à son inspiration. Voici un aperçu des projets de mes camarades (n’hésitez pas à cliquer sur le prénom pour aller voir leurs projets) :</p>
         <ul>
-           <li><span>Bisch Benjamin :</span> <a href=""> “Dobby est libre"</a></li> 
-            <li><span>Collin Hugo :</span><a href=""> "L'École des Sortilèges".</a></li>
-            <li><span>Grosjean Romain :</span><a href=""> "Life Finds a Way".</a></li>
-            <li><span>Hashimoto Edouard :</span><a href=""> “Bibliothèque de magie."</a></li>
-            <li><span>Lallemand Maxence :</span><a href=""> "Endless Rebirth".</a></li>
-            <li><span>Malande Samba Claude :</span><a href=""> "Kulture".</a></li>
-            <li><span>Poilâne Mélissa :</span><a href=""> “La où l’on va, on n’a pas besoin de route”.</a></li>
-            <li><span>Schmitt Ethan :</span><a href=""> "ShermanLegends".</a></li>
+           <li><strong>Bisch Benjamin :</strong> <a class="information__lien" href="http://dobby-est-libre.netlify.app"> “Dobby est libre"</a></li> 
+            <li><strong>Collin Hugo :</strong><a class="information__lien" href="https://l-ecole-des-sortileges.hugo-collin.fr/"> "L'École des Sortilèges".</a></li>
+            <li><strong>Grosjean Romain :</strong><a class="information__lien" href="https://paleo.lifefindsaway.fr/ "> "Life Finds a Way".</a></li>
+            <li><strong>Hashimoto Edouard :</strong><a class="information__lien" href="https://labibliothequedemagie.edouardhashimoto.fr/"> “Bibliothèque de magie."</a></li>
+            <li><strong>Lallemand Maxence :</strong><a class="information__lien" href="https://endlessrebirth.maxencelallemand.fr/"> "Endless Rebirth".</a></li>
+            <li><strong>Malande Samba Claude :</strong><a class="information__lien" href="http://kultures.claudesamba.fr/"> "Kulture".</a></li>
+            <li><strong>Poilâne Mélissa :</strong><a class="information__lien" href="http://on-a-pas-besoin-de-route.melissapoilane.fr/"> “La où l’on va, on n’a pas besoin de route”.</a></li>
+            <li><strong>Schmitt Ethan :</strong><a class="information__lien" href="https://shermanlegends.ethan-schmitt.fr/"> "ShermanLegends".</a></li>
         </ul>      
-        <p>Chaque projet apporte sa propre vision et créativité, formant ainsi une toile variée et dynamique de répliques et d'interprétations sur le temps, le Kung Fu et bien plus encore. Notre ambition est de vous offrir une expérience immersive et inspirante à travers ces différentes perspectives.
-            Restez à l'écoute pour découvrir la magie des répliques et l'art de la narration sur notre site dédié. Nous sommes ravis de partager cette aventure avec vous et espérons que vous trouverez ici une source d'inspiration et de réflexion.</p>
-        <p>Bienvenue dans notre monde de répliques et d'exploration !</p>
+        <p>Chaque projet apporte sa propre vision et créativité, formant ainsi une toile variée et dynamique de répliques et d'interprétations sur le temps, le Kung Fu et bien plus encore. Notre ambition est de vous offrir une expérience immersive et inspirante à travers ces différentes perspectives. Restez à l'écoute pour découvrir la magie des répliques et l'art de la narration sur notre site dédié. Nous sommes ravis de partager cette aventure avec vous et espérons que vous trouverez ici une source d'inspiration et de réflexion.</p>
+       <p>Bienvenue dans notre monde de répliques et d'exploration !</p>
+        </section>
     </main>
     <footer class="footer">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Glossaire</a></li>
+                <li><a class="footer__menu-list" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__menu-list" href="/fr/propos.html">A propos</a></li>
+                <li><a class="footer__menu-list" href="/fr/glossaire.html">Glossaire</a></li>
             </ul>
         </nav>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
     <div class="footer__contact">
-        <address class="footer__address">
+        <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
         </address>
     </div>
-    <div class="footer__social">
+    <div class="footer__reseaux">
         <ul class="footer__list list-unstyled">
-          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+          <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
         </ul>
     </div>
 </footer>
