@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" 
-x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" 
+x-data="{ menuIsOpen: false, bouton1: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/replica.html">
-    <title>Kung Fu Panda </title>
+    <link rel="alternate" hreflang="fr" href="/fr/kung-fu-fighting.html">
+    <title>Kung Fu Fighting</title>
 </head>
 <body x-data="{ atTop: true }">
     <header
@@ -19,8 +19,8 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
             </a>
         </div>
         <div class="header__end" >
-            <a class="header__link" href="/en/index.html">
-                <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
+            <a class="header__link" href="/fr/pensee-sur-le-temps.html">
+                <img src="/public/icons/france.svg" alt="drapeau anglais">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -30,32 +30,32 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/replique.html">Réplique</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-panda.html">Kung Fu Panda</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/pensee-sur-le-temps.html">Pensée sur le temps</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/kung-fu-fighting.html">Kung Fu Fighting</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/realisateurs.html">Mark Osborne et John Stevenson</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/propos.html"> A propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/replica.html">Replica</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/kung-fu-panda.html">Kung Fu Panda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/thinking-about-time.html">Thinking about time</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/kung-fu-fighting.html">Kung Fu Fighting</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/directors.html">Mark Osborne and John Stevenson</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossarry.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html"> About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section>
-        <div>
+        <div class="header__img">
             <img src="/public/img/album-musique.webp" alt="affiche du film">
         </div>
         <div class="container">
             <h2>Kung Fu Fighting</h2>
-            <p>The vibrating song “Kung Fu Fighting” and it’s fascinating link to the famous line from the movie <a href="/en/glossary.html">“Kung Fu Panda”</a>.</p>
+            <p>The vibrating song “Kung Fu Fighting” and it’s fascinating link to the famous line from the movie <a class="glossary__mot" href="/en/glossary.html">“Kung Fu Panda”</a>.</p>
             <h3>The energetic song that celebrates Kung Fu</h3>
             <p>The song is catchy and energetic. It is dynamic and pays tribute to the world of kung fu with funny lyrics and a lively rhythm that represents the film. The idea is that kung fu is an art that can be enjoyed by all..</p>
             <p>The song highlights the power of perseverance and determination, just like Po. It reminds us that each of us has the potential to become a master in our own lives.</p>
             <figure>
                 <img src="/public/img/kungfu.webp" alt="Kung fu">
-                <figcaption>Deux personnages qui font du Kung Fu</figcaption>
+                <figcaption>Two characters who make Kung Fu</figcaption>
             </figure>
             <h3>The link with the philosophy of the present</h3>
             <p>The film’s line “Yesterday is behind, tomorrow is a mystery, and today is a gift, which is why we call it the present”, resonates throughout the song. The lyrics speak of the present moment, dance, kung fu and energy of the present. It is a call to celebrate life and have fun at every moment with enthusiasm.</p>
@@ -64,37 +64,37 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
             <p>Music is a powerful way to connect with ideas and emotions.</p>
             <figure>
                 <img src="/public/img/musique.webp" alt="Source d'inspiration de la musique">
-                <figcaption>La musique est une source d'inspiration dans le dessin animé</figcaption>
+                <figcaption>Music is a source of inspiration in the cartoon</figcaption>
             </figure>
             <p>Music can move us by reminding us of important values. It reminds us that every day is an opportunity to learn, grow, and live life to the fullest.</p>
             <p>Embrace the present moment, like Po on his journey to kung fu mastery. Music is a powerful force. Enjoy it, because today is a gift!</p>
-            <div>
+            <div class="publication">
             <p>by Océane ROBERT</p>
-            <p>to be published today at 8.00 am</p>
+            <p class="publication__text">to be published today at 8.00 am</p>
             </div>
         </div>
-        <div class="article__btn"> 
-            <div>
-                <img src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
-                <a href="/fr/pensee-sur-le-temps.html">book</a>
+        <div class="button"> 
+            <div class="button__content-left">
+                <img class="button__fleche-left" src="/public/icons/arrow-left.svg" alt="flèche vers la gauche">
+                <a class="button__text-left" href="/en/thinking-about-time.html">book</a>
             </div>
-            <div>
-                <a href="/fr/realisateurs.html">directors</a>
-                <img src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
+            <div class="button__content-right">
+                <a class="button__text-right" href="/en/directors.html">directors</a>
+                <img class="button__fleche-right" src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
             </div>
         </div>
     </section>
     </main>
     <footer class="footer">
-        <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
+        <p class="footer__nom">Océane Robert MMI 1 - Group A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-                <li><a class="footer__menu-list" href="/fr/contact.html">Contact</a></li>
-                <li><a class="footer__menu-list" href="/fr/propos.html">A propos</a></li>
-                <li><a class="footer__menu-list" href="/fr/glossaire.html">Glossaire</a></li>
+            <li><a class="footer__menu-list"  href="#">Contact</a></li>
+            <li><a class="footer__menu-list"  href="#">About</a></li>
+            <li><a class="footer__menu-list"  href="#">Glossarry</a></li>
             </ul>
         </nav>
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Project carried out as part of an educational exercise at the MMi Montbéliard department</p>
     <div class="footer__contact">
         <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
