@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" 
-x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+x-data="{ menuIsOpen: false, bouton1: false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,11 +75,15 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         </div>
      </section>   
      <section class="container">
-        <div class="accordeon">
+        <div class="accordeon" aria-controls="mainNav" 
+        @click="bouton1 = ! bouton1">
             <h2 class="accordeon__title">Bibliographie</h2>
+            <div class="accordeon__bouton">
             <p class="accordeon__text">Envie de découvrir d'autres livres...</p>
+            <img class="accordeon__fleche" src="/public/icons/arrow-bottom.svg" alt="fléche vers le bas">
+            </div>
         </div>
-        <div class="timeline">
+        <div class="timeline" id="mainNav" x-show="bouton1" x-transition.duration.900ms>
             <p>Ceci est une liste de livres qui pourrait approfondir votre recherche sur la citation et le film en apprentissage.</p>
             <div class="timeline__content">
                 <div class="content left">

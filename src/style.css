@@ -17,4 +17,5 @@
  @import '/src/css/components/hero.css';
  @import '/src/css/components/glossary.css';
  @import '/src/css/layout/information.css';
- @import '/src/css/layout/404.css'
+ @import '/src/css/layout/404.css';
+ @import '/src/css/components/accordeon.css';

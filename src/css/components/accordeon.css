@@ -1,0 +1,18 @@
+.accordeon__title{
+    text-align: left;
+    margin: 0;
+}
+
+.accordeon__bouton {
+    display: flex;
+    margin: 0;
+}
+
+.accordeon {
+    background-color: var(--gray-200);
+    padding: 5px;
+}
+
+.accordeon__fleche {
+    margin-left: auto; 
+}

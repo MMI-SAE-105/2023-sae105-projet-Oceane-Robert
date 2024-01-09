@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr" 
+<html lang="en" 
 x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>About</title>
+    <link rel="alternate" hreflang="fr" href="/fr/kung-fu-panda.html">
+    <title>Kung Fu Panda</title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
             </a>
         </div>
         <div class="header__end" >
-            <a class="header__link" href="/en/index.html">
-                <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
+            <a class="header__link" href="/fr/index.html">
+                <img src="/public/icons/france.svg" alt="drapeau anglais">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -44,46 +44,44 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     </header>
     <main>
         <section>
-        <div>
+        <div class="header__img">
             <img src="/public/img/affiche-film.webp" alt="affiche du film">
         </div>
         <div class="container">
             <h2>Kung Fu Panda</h2>
-            <p><a href="/en/glossary.html">Kung Fu Panda</a> is a 2008 blockbuster animated film directed by Mark Osborne and John Stevenson. Immerse yourself in a world of adventure, <a href="/en/glossary.html">kung fu</a> and humor. It is one of the most beloved <a href="/en/glossary.html">animated films</a> of all time. In this article, we will explore the reasons for the success of the film for fans of martial art, comedy and action.</p>
+            <p><a class="glossary__mot" href="/en/glossary.html">Kung Fu Panda</a> is a 2008 blockbuster animated film directed by Mark Osborne and John Stevenson. Immerse yourself in a world of adventure, <a class="glossary__mot" href="/en/glossary.html">kung fu</a> and humor. It is one of the most beloved <a class="glossary__mot" href="/en/glossary.html">animated films</a> of all time. In this article, we will explore the reasons for the success of the film for fans of martial art, comedy and action.</p>
             <figure>
                 <img src="/public/img/realisatuer-perso.webp" alt="les réalisateurs avec les personnages">
                 <figcaption>Les réalisateurs avec les personnages du Kung Fu Panda</figcaption>
             </figure>
             <h3>Po, the attaching Panda</h3>
-            <p>At the heart of the story is the character Po is a clumsy, but endearing panda with a passion for noodles. Po works at his adoptive father’s restaurant, Mr. Ping, but he has a bigger one. He wants to become a <a href="/en/glossary.html">kung fu</a> master.</p>
-            <p><a href="/en/glossary.html">Po</a> is special because he is an unlikely hero. He is not a fighter and loves to eat as much as <a href="/en/glossary.html">kung fu</a>. The story of Po shows us that whatever the appearance, we persevere and believe in ourselves.</p>            
-            <div>
-            <figure>
-                <img src="/public/img/Oogway.webp" alt="Maître Oogway">
-                <figcaption>Personnage Oogway</figcaption>
+            <p>At the heart of the story is the character Po is a clumsy, but endearing panda with a passion for noodles. Po works at his adoptive father’s restaurant, Mr. Ping, but he has a bigger one. He wants to become a <a class="glossary__mot" href="/en/glossary.html">kung fu</a> master.</p>
+            <p><a class="glossary__mot" href="/en/glossary.html">Po</a> is special because he is an unlikely hero. He is not a fighter and loves to eat as much as <a class="glossary__mot" href="/en/glossary.html">kung fu</a>. The story of Po shows us that whatever the appearance, we persevere and believe in ourselves.</p>            
+            <div class="hero">
+            <figure class="hero__figure">
+                <img class="hero__img" src="/public/img/Oogway.webp" alt="Maître Oogway">
+                <figcaption class="hero__legend">Personnage Oogway</figcaption>
             </figure>
-            <h3>The perseverance of Po</h3>
-            <p><a href="/en/glossary.html">Master Oogway’s</a> replica “yesterday is behind, tomorrow is mystery, and today is a gift, which is why it is called the present” resonates particularly well with <a href="/en/glossary.html">Po’s</a> journey.</p>
+            <div class="hero__text">
+                <h3>The perseverance of Po</h3>
+                <p><a class="glossary__mot" href="/en/glossary.html">Master Oogway’s</a> replica “yesterday is behind, tomorrow is mystery, and today is a gift, which is why it is called the present” resonates particularly well with <a class="glossary__mot" href="/en/glossary.html">Po’s</a> journey.</p>
             </div>
-            <p>In the animated world of <a href="/en/glossary.html">Kung Fu Panda</a>, Po, the panda teaches us <a href="/en/glossary.html">perseverance</a>. <a href="/en/glossary.html">Po’s perseverance</a> lies in focusing on the present moment. <a href="/en/glossary.html">Po</a> embodies the wisdom of the replica. He transforms every day into an opportunity to grow, a precious gift that he exploits to the fullest.</p>           
+            </div>
+            <p>In the animated world of <a class="glossary__mot" href="/en/glossary.html">Kung Fu Panda</a>, Po, the panda teaches us <a class="glossary__mot" href="/en/glossary.html">perseverance</a>. <a class="glossary__mot" href="/en/glossary.html">Po’s perseverance</a> lies in focusing on the present moment. <a class="glossary__mot" href="/en/glossary.html">Po</a> embodies the wisdom of the replica. He transforms every day into an opportunity to grow, a precious gift that he exploits to the fullest.</p>           
             <h3>Epic battles and dazzling animation</h3>
-            <p>The film is well-named for the breathtaking combat scenes. The dynamic, fluid and impressive movements to watch. The characters fight with style and grace, creating thrilling action sequences that make you want to become an expert in <a href="/en/glossary.html">kung fu</a>.</p>
-            <p>The <a href="/en/glossary.html">animation</a> of the film is of great beauty with majestic landscapes with incredible details. It created a captivating world that you would like to explore.</p>
+            <p>The film is well-named for the breathtaking combat scenes. The dynamic, fluid and impressive movements to watch. The characters fight with style and grace, creating thrilling action sequences that make you want to become an expert in <a class="glossary__mot" href="/en/glossary.html">kung fu</a>.</p>
+            <p>The <a class="glossary__mot" href="/en/glossary.html">animation</a> of the film is of great beauty with majestic landscapes with incredible details. It created a captivating world that you would like to explore.</p>
             <h3>Important lessons</h3>
-            <p>Beyond the action and humor of <a href="/en/glossary.html">Kung Fu Panda, PO</a> teaches us valuable lessons. He learns to persevere and overcome doubts by believing in himself. It’s a reminder that we all have the potential to become heroes, no matter the circumstances.</p>
+            <p>Beyond the action and humor of <a class="glossary__mot" href="/en/glossary.html">Kung Fu Panda, PO</a> teaches us valuable lessons. He learns to persevere and overcome doubts by believing in himself. It’s a reminder that we all have the potential to become heroes, no matter the circumstances.</p>
             <figure>
                 <img src="/public/img/Combat.webp" alt="position de combat">
                 <figcaption>Position de combat des personnages</figcaption>
             </figure>
-            <p><a href="/en/glossary.html">“Kung Fu Panda”</a> is more than just an animated film. It is a captivating adventure that mixes kung fu, comedy and precious life lessons. This movie is for you, if you are looking for an inspiring story, epic fights and memorable characters. Whether you are a child or an adult, do not miss the opportunity in an incredible, thrilling universe where pandas become heroes.</p>
-            <div>
+            <p><a class="glossary__mot" href="/en/glossary.html">“Kung Fu Panda”</a> is more than just an animated film. It is a captivating adventure that mixes kung fu, comedy and precious life lessons. This movie is for you, if you are looking for an inspiring story, epic fights and memorable characters. Whether you are a child or an adult, do not miss the opportunity in an incredible, thrilling universe where pandas become heroes.</p>
+            <div class="publication">
             <p>by Océane ROBERT</p>
-            <p>to be published today at 8.00 am</p>
+            <p class="publication__text">to be published today at 8.00 am</p>
             </div>
-        </div>
-        <div class="publication">
-            <a href="/fr/kung-fu-panda.html">Film</a>
-            <img src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
         </div>
     </section>
     <section class="carroussel container">
@@ -163,6 +161,16 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
                 </ul>
             </div>
     </section>
+    <div class="button">
+        <div class="button__content-left">
+            <img class="button__fleche-left" src="/public/icons/arrow-left.svg" alt="flèche vers la droite">
+            <a class="button__text-left" href="/fr/kung-fu-panda.html">Replica</a>
+        </div>
+        <div class="button__content-right">
+            <a class="button__text-right" href="/fr/kung-fu-panda.html">Book</a>
+            <img class="button__fleche-right" src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
+        </div>
+    </div>
     </main>
     <footer class="footer">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
