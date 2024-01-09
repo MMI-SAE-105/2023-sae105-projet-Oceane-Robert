@@ -6,13 +6,13 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>Accueil</title>
+    <link rel="alternate" hreflang="en" href="/en/replica.html">
+    <title>Kung Fu Panda </title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
             <a href="/">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
@@ -44,46 +44,44 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     </header>
     <main>
         <section>
-        <div>
+        <div class="header__img">
             <img src="/public/img/affiche-film.webp" alt="affiche du film">
         </div>
         <div class="container">
             <h2>Kung Fu Panda</h2>
-            <p><a href="/fr/glossaire.html">Kung Fu Panda</a> est un film d’animation incontournable, sorti en 2008. Il a été réalisé par Mark Osborne et John Stevenson. Plonger dans un monde d’aventure, de <a href="/fr/glossaire.html">Kung fu</a> et d’humour. Il fait partie des <a href="/fr/glossaire.html">films d’animation</a> les plus appréciés de tous les temps. Dans cet article, on va explorer les raisons du succès du film pour les amateurs d’art martiaux, de comédie et d’action.</p>
+            <p><a class="glossary" href="/fr/glossaire.html">Kung Fu Panda</a> est un film d’animation incontournable, sorti en 2008. Il a été réalisé par Mark Osborne et John Stevenson. Plonger dans un monde d’aventure, de <a class="glossary" href="/fr/glossaire.html">Kung fu</a> et d’humour. Il fait partie des <a class="glossary"  href="/fr/glossaire.html">films d’animation</a> les plus appréciés de tous les temps. Dans cet article, on va explorer les raisons du succès du film pour les amateurs d’art martiaux, de comédie et d’action.</p>
             <figure>
                 <img src="/public/img/realisatuer-perso.webp" alt="les réalisateurs avec les personnages">
                 <figcaption>Les réalisateurs avec les personnages du Kung Fu Panda</figcaption>
             </figure>
             <h3>Po, le panda attachant :</h3>
-            <p>Au cœur de l’histoire, on retrouve le personnage <a href="/fr/glossaire.html">Po</a> est un panda maladroit, mais attachant avec une passion pour les nouilles. Po travaille au restaurant de son père adoptif, M. Ping, mais il a un plus grand. Il souhaite devenir un maître de <a href="/fr/glossaire.html">kung-fu</a>.</p>
-            <p><a href="/fr/glossaire.html">Po</a> est spécial, car il est un héros improbable. Il n’a pas une carrure de combattant et il adore manger autant que le <a href="/fr/glossaire.html">kung-fu</a>. L’histoire de Po nous montre qu’importe l’apparence, nous persévérons et croyons-en nous-mêmes.</p>            
-            <div>
-            <figure>
-                <img src="/public/img/Oogway.webp" alt="Maître Oogway">
-                <figcaption>Personnage Oogway</figcaption>
+            <p>Au cœur de l’histoire, on retrouve le personnage <a class="glossary"  href="/fr/glossaire.html">Po</a> est un panda maladroit, mais attachant avec une passion pour les nouilles. Po travaille au restaurant de son père adoptif, M. Ping, mais il a un plus grand. Il souhaite devenir un maître de <a class="glossary"  href="/fr/glossaire.html">kung-fu</a>.</p>
+            <p><a class="glossary"  href="/fr/glossaire.html">Po</a> est spécial, car il est un héros improbable. Il n’a pas une carrure de combattant et il adore manger autant que le <a class="glossary"  href="/fr/glossaire.html">kung-fu</a>. L’histoire de Po nous montre qu’importe l’apparence, nous persévérons et croyons-en nous-mêmes.</p>            
+            <div class="hero">
+            <figure class="hero__figure">
+                <img class="hero__img" src="/public/img/Oogway.webp" alt="Maître Oogway">
+                <figcaption class="hero__legend">Personnage Oogway</figcaption>
             </figure>
+            <div class="hero__text">
             <h3>La persévérance de Po :</h3>
-            <p>La réplique de <a href="/fr/glossaire.html">maître Oogway</a> “hier est derrière, demain est mystère, et aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent” résonne particulièrement bien avec le parcours de <a href="/fr/glossaire.html">Po</a>.</p>
+            <p>La réplique de <a class="glossary"  href="/fr/glossaire.html">maître Oogway</a> “hier est derrière, demain est mystère, et aujourd’hui est un cadeau, c’est pour cela qu’on l’appelle le présent” résonne particulièrement bien avec le parcours de <a class="glossary"  href="/fr/glossaire.html">Po</a>.</p>
             </div>
-            <p>Dans le monde animé de <a href="/fr/glossaire.html">“Kung Fu Panda”</a>,Po, le panda nous enseigne la <a href="/fr/glossaire.html">persévérance</a>. La <a href="/fr/glossaire.html">persévérance</a> de <a href="/fr/glossaire.html">Po</a> réside dans se concentrer sur l’instant présent. <a href="/fr/glossaire.html">Po</a> incarne la sagesse de la réplique. Il transforme chaque jour en une opportunité de grandir, un cadeau précieux qu’il exploite au maximum.</p>           
+            </div>
+            <p>Dans le monde animé de <a class="glossary"  href="/fr/glossaire.html">“Kung Fu Panda”</a>,Po, le panda nous enseigne la <a class="glossary"  href="/fr/glossaire.html">persévérance</a>. La <a class="glossary"  href="/fr/glossaire.html">persévérance</a> de <a class="glossary"  href="/fr/glossaire.html">Po</a> réside dans se concentrer sur l’instant présent. <a class="glossary"  href="/fr/glossaire.html">Po</a> incarne la sagesse de la réplique. Il transforme chaque jour en une opportunité de grandir, un cadeau précieux qu’il exploite au maximum.</p>           
             <h3>Combats épiques et animation éblouissante</h3>
-            <p>Le film est bien nommé pour les scènes de combat qui sont à couper le souffle. Les mouvements dynamique, fluide et impressionnant à regarder. Les personnages combattent avec style et grâce, créant des séquences d’action palpitantes qui donnent envie de devenir un expert en <a href="/fr/glossaire.html">Kung fu</a>.</p>
-            <p><a href="/fr/glossaire.html">L’animation</a> du film est d'une grande beauté avec des paysages majestueux avec des détails incroyables. Cela créait un monde captivant que tu aimerais explorer.</p>
+            <p>Le film est bien nommé pour les scènes de combat qui sont à couper le souffle. Les mouvements dynamique, fluide et impressionnant à regarder. Les personnages combattent avec style et grâce, créant des séquences d’action palpitantes qui donnent envie de devenir un expert en <a class="glossary"  href="/fr/glossaire.html">Kung fu</a>.</p>
+            <p><a class="glossary"  href="/fr/glossaire.html">L’animation</a> du film est d'une grande beauté avec des paysages majestueux avec des détails incroyables. Cela créait un monde captivant que tu aimerais explorer.</p>
             <h3>Leçons importantes</h3>
-            <p>Au-delà de l’action et de l’humour de <a href="/fr/glossaire.html">Kung Fu Panda</a>, <a href="/fr/glossaire.html">Po</a> nous enseigne des leçons précieuses. Il apprend à persévérer et à surmonter les doutes en croyant en lui-même. C’est un rappel qu’on a tout le potentiel pour devenir un héros, peu importe les circonstances.</p>
+            <p>Au-delà de l’action et de l’humour de <a class="glossary"  href="/fr/glossaire.html">Kung Fu Panda</a>, <a class="glossary"  href="/fr/glossaire.html">Po</a> nous enseigne des leçons précieuses. Il apprend à persévérer et à surmonter les doutes en croyant en lui-même. C’est un rappel qu’on a tout le potentiel pour devenir un héros, peu importe les circonstances.</p>
             <figure>
                 <img src="/public/img/Combat.webp" alt="position de combat">
                 <figcaption>Position de combat des personnages</figcaption>
             </figure>
-            <p><a href="/fr/glossaire.html">“Kung Fu Panda”</a> est plus qu’un simple film d’animation. C’est une aventure captivante qui mélange le kung-fu, la comédie et les leçons de vie précieuses. Ce film est fait pour toi, si tu es à la recherche d’une histoire inspirante, des combats épiques et des personnages mémorables. Alors que vous soyez un enfant ou un adulte, ne manquez pas l’opportunité dans un incroyable univers palpitant ou les pandas deviennent des héros.</p>
-            <div>
+            <p><a class="glossary"  href="/fr/glossaire.html">“Kung Fu Panda”</a> est plus qu’un simple film d’animation. C’est une aventure captivante qui mélange le kung-fu, la comédie et les leçons de vie précieuses. Ce film est fait pour toi, si tu es à la recherche d’une histoire inspirante, des combats épiques et des personnages mémorables. Alors que vous soyez un enfant ou un adulte, ne manquez pas l’opportunité dans un incroyable univers palpitant ou les pandas deviennent des héros.</p>
+            <div class="publication">
             <p>par Océane ROBERT</p>
-            <p>publier aujourd’hui à 8h00</p>
+            <p class="publication__text">publier aujourd’hui à 8h00</p>
             </div>
-        </div>
-        <div class="publication">
-            <a href="/fr/kung-fu-panda.html">Film</a>
-            <img src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
         </div>
     </section>
     <section class="carroussel container">
@@ -163,28 +161,38 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
                 </ul>
             </div>
     </section>
+    <div class="button">
+        <div class="button__content-left">
+            <img class="button__fleche-left" src="/public/icons/arrow-left.svg" alt="flèche vers la droite">
+            <a class="button__text-left" href="/fr/kung-fu-panda.html">Film</a>
+        </div>
+        <div class="button__content-right">
+            <a class="button__text-right" href="/fr/kung-fu-panda.html">Musique</a>
+            <img class="button__fleche-right" src="/public/icons/arrow-right.svg" alt="flèche vers la droite">
+        </div>
+    </div>
     </main>
     <footer class="footer">
         <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Glossaire</a></li>
+                <li><a class="footer__menu-list" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__menu-list" href="/fr/propos.html">A propos</a></li>
+                <li><a class="footer__menu-list" href="/fr/glossaire.html">Glossaire</a></li>
             </ul>
         </nav>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
     <div class="footer__contact">
-        <address class="footer__address">
+        <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
         </address>
     </div>
-    <div class="footer__social">
+    <div class="footer__reseaux">
         <ul class="footer__list list-unstyled">
-          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+          <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
         </ul>
     </div>
 </footer>

@@ -1,19 +1,19 @@
 .button {
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: flex-end;
+    margin-top: 7%;
 }
 
-.button__content {
+.button__content-right {
     background-color: var(--brand-jaune);
     display: flex;
     align-items: center;
-    margin-right: 56px;
+    margin-left: 23%;
     margin-bottom: 19px;
+    justify-content: flex-end;
 }
 
-.button__text {
+.button__text-right {
     text-decoration: none;
     color: var(--black);
     padding: 16px 10px 16px 24px;
@@ -22,8 +22,37 @@
     font-weight: normal;
 }
 
-.button__fleche {
+.button__fleche-right {
     padding: 15px 24px 16px 0px;
 }
 
+.button__content-left {
+    background-color: var(--brand-jaune);
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+    margin-bottom: 19px;
+    justify-content: flex-start;
+}
 
+.button__text-left {
+    text-decoration: none;
+    color: var(--black);
+    padding: 16px 24px 16px 10px;
+    text-transform: uppercase;
+    font-size: var(--text-btn);
+    font-weight: normal;
+}
+
+.button__fleche-left {
+    padding: 15px 0px 16px 24px;
+}
+
+.button__content{
+    background-color: var(--brand-jaune);
+    display: flex;
+    align-items: center;
+    margin-left: 227px;
+    margin-bottom: 19px;
+    justify-content: flex-end;
+}
