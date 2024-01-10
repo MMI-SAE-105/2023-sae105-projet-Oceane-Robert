@@ -50,3 +50,6 @@
     display: flex;
     margin-top: 8px;
 }
+.formulaire__text{
+    text-align: center;
+}

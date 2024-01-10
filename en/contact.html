@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr" 
-x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" 
+x-data="{ menuIsOpen: false, bouton1: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <link rel="alternate" hreflang="en" href="/en/index.html">
-    <title>About</title>
+    <link rel="alternate" hreflang="fr" href="/fr/propos.html">
+    <title>Contact</title>
 </head>
 <body x-data="{ atTop: true }">
     <header
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-    :class="{ 'header--atTop' : !atTop }">
+    :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
-            <a href="/">
+            <a href="/en/index.html">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
             </a>
         </div>
         <div class="header__end" >
-            <a class="header__link" href="/en/index.html">
-                <img src="/public/icons/united-kingdom.svg" alt="drapeau anglais">
+            <a class="header__link" href="/fr/contact.html">
+                <img src="/public/icons/france.svg" alt="drapeau anglais">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -36,13 +36,15 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
                 <li class="menu__item"><a class="menu__link" href="/en/thinking-about-time.html">Thinking about time</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/kung-fu-fighting.html">Kung Fu Fighting</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/directors.html">Mark Osborne and John Stevenson</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/glossarry.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
                 <li class="menu__item"><a class="menu__link" href="/en/about.html"> About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="container">
+        <h2 class="formulaire__title">Form</h2>
+        <p class="formulaire__text">If you have any questions, don't hesitate to ask.</p>
         <form class="formulaire container" action="/submit_contact" method="post">
             <p>
             <label class="formulaire__nom" for="prenom">First Name </label><br>
@@ -58,7 +60,7 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
             </p>
             <p>
             <label class="formulaire__nom" for="message">Message </label><br>
-            <textarea id="message" name="message">Write...</textarea><br>
+            <textarea class="formulaire__message" id="message" name="message">Write...</textarea><br>
             </p>
             <p>
             <input class="formulaire__btn" type="submit" value="Send">
@@ -66,26 +68,26 @@ x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
         </form>  
     </main>
     <footer class="footer">
-        <p class="footer__nom">Océane Robert MMI 1 - Groupe A1</p>
+        <p class="footer__nom">Océane Robert MMI 1 - Group A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Glossaire</a></li>
+            <li><a class="footer__menu-list"  href="/en/contact.html">Contact</a></li>
+            <li><a class="footer__menu-list"  href="/en/about.html">About</a></li>
+            <li><a class="footer__menu-list"  href="/en/glossary.html">Glossarry</a></li>
             </ul>
         </nav>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi Montbéliard</p>
+        <p class="footer__text">Project carried out as part of an educational exercise at the MMi Montbéliard department</p>
     <div class="footer__contact">
-        <address class="footer__address">
+        <address class="footer__mail">
           <a href="mailto:oceane.robert72@gmail.com">oceane.robert72@gmail.com</a>
         </address>
     </div>
-    <div class="footer__social">
+    <div class="footer__reseaux">
         <ul class="footer__list list-unstyled">
-          <li><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
-          <li><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
-          <li><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
+          <li class="footer__item"><a href="https://instagram.com" aria-label="instagram"><img src="/public/icons/instagram.svg" alt="icone instagram"></a></li>
+          <li class="footer__item"><a href="https://youtube.com" aria-label="youtube"><img src="/public/icons/youtube.svg" alt="icone youtube"></a></li>
+          <li class="footer__item"><a href="https://twitter.com" aria-label="twitter"><img src="/public/icons/twitter.svg" alt="icone twitter"></a></li>
+            <li class="footer__mmi"><a href="https://mmimontbeliard.com/" aria-label="mmi"><img src="/public/icons/mmi-white.svg" alt="icone MMI"></a></li>
         </ul>
     </div>
 </footer>

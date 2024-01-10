@@ -14,12 +14,12 @@ x-data="{ menuIsOpen: false, bouton1: false }" :class="menuIsOpen && 'noscroll'"
     @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">
         <div class="header__start">
-            <a href="/">
+            <a href="/en/index.html">
                 <img class="header__logo" src="/public/icons/Mode_Isolation.svg" alt="logo">
             </a>
         </div>
         <div class="header__end" >
-            <a class="header__link" href="/fr/pensee-sur-le-temps.html">
+            <a class="header__link" href="/fr/kung-fu-fighting.html">
                 <img src="/public/icons/france.svg" alt="drapeau anglais">
             </a>
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -89,9 +89,9 @@ x-data="{ menuIsOpen: false, bouton1: false }" :class="menuIsOpen && 'noscroll'"
         <p class="footer__nom">Océane Robert MMI 1 - Group A1</p>
         <nav class="footer__menu">
             <ul class="list-unstyled">
-            <li><a class="footer__menu-list"  href="#">Contact</a></li>
-            <li><a class="footer__menu-list"  href="#">About</a></li>
-            <li><a class="footer__menu-list"  href="#">Glossarry</a></li>
+            <li><a class="footer__menu-list"  href="/en/contact.html">Contact</a></li>
+            <li><a class="footer__menu-list"  href="/en/about.html">About</a></li>
+            <li><a class="footer__menu-list"  href="/en/glossary.html">Glossarry</a></li>
             </ul>
         </nav>
         <p class="footer__text">Project carried out as part of an educational exercise at the MMi Montbéliard department</p>
