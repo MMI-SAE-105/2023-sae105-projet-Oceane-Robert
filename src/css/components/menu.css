@@ -9,7 +9,7 @@
     letter-spacing: var(--letter-spacing);
     transition: all .4s ease-in-out;
     z-index: 2;
-    height: 50%;
+    height: 39.5%;
 }
 
 .menu--open {
